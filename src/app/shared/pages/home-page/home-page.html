@@ -1,6 +1,27 @@
 <div class="min-h-screen flex flex-col">
-  <main class="flex-1">
-    <p>home-page works!</p>
-  </main>
-  <app-footer></app-footer>
+  <div class="hero min-h-screen relative overflow-hidden">
+    <video 
+      class="absolute inset-0 w-full h-full object-cover z-0" 
+      autoplay 
+      muted 
+      loop 
+      playsinline>
+      <source src="https://storage.googleapis.com/gd-prod/media/714c3007-7635-4738-ad94-4146fc4631a3_kablammo_5.mp4#t=0.001" type="video/mp4">
+    </video>
+    <div class="hero-overlay bg-black opacity-50 z-10"></div>
+    <div class="hero-content text-neutral-content text-center relative z-20">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Country App</h1>
+        <p class="mb-5">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <button class="btn btn-primary" routerLink="/country">Empezar</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<footer>
+    <app-footer></app-footer>
+</footer>
