@@ -11,6 +11,12 @@
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-  <input type="search" required placeholder="Search" />
+  <input
+    #inputBusqueda
+    type="search"
+    required
+    placeholder="Search"
+    (keyup.enter)="buscar(inputBusqueda.value)"
+  />
 </label>
-<button class="btn btn-soft">Buscar</button>
+<button class="btn btn-soft" (click)="buscar(inputBusqueda.value)">Buscar</button>

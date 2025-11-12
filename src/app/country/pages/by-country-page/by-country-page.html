@@ -1,2 +1,2 @@
-<search-input></search-input>
-<country-list></country-list>
+<search-input (onSearch)="buscarPorCountry($event)"></search-input>
+<country-list [countries]="countries()"></country-list>
